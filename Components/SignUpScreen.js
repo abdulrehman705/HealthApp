@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
 
-
 const SignUpScreen = () => {
   const navigation = useNavigation()
   const [isSelected, setSelection] = useState(false);
@@ -22,9 +21,9 @@ const SignUpScreen = () => {
         username,
         password,
         password2,
-        first_name: "ar",
-        last_name: "ark",
-        email: "ark@gabdulmail.com",
+        first_name: "Admin",
+        last_name: "Jhon",
+        email: "admin@gmail.com",
       },
       );
       // Token Path

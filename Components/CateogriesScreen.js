@@ -1,15 +1,19 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 
 const CateogriesScreen = () => {
+  const navigation = useNavigation()
   return (
     <View style = {styles.Container}>
       <Text style = {styles.CateogryText}>Choose your Cateogry</Text>
       <View style = {styles.AlignBox}>
+        <TouchableOpacity onPress={() => navigation.navigate('DoctorCollection')}>
         <View style = {styles.Box}>
           <Image source={require("../Images/Cardiologist.png")}></Image>
           <Text style = {styles.Text}>Cardiologist</Text>
         </View>
+        </TouchableOpacity>
         <View style = {styles.Box}>
           <Image source={require("../Images/Ophthalmologist.png")}></Image>
           <Text style = {styles.SecondText}>Ophthalmologist</Text>

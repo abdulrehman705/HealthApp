@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     top: 254,
   },
   logo: {
-    left: 83,
+    left: 100,
   }
 })
